@@ -6,9 +6,9 @@ import "../CSS/Comments.css"
 
 const CommentsIndex = ({post_id})=>{
     const handleStyle = {
-        height:"100px",
-        width:"200px",
-        border: "2px solid red"
+        height:"30px",
+        width:"400px",
+        border: "2px solid red",
         
     }
     const API = apiURL()
