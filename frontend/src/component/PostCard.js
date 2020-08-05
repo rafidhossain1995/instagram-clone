@@ -23,8 +23,7 @@ const PostCard = ({imageUrl, postContent, post_id})=>{
             <h3 className="follow">follow</h3>
 
             <br/>
-            <CreateComment post_id={post_id}/>
-            <DisplayComment post_id={post_id}/>
+           
             </div>
           
 

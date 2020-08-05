@@ -29,7 +29,7 @@ const addComment = async (req, res, next) => {
       const { post_id } = req.params;
       res.status(200).json({
         status: "Success",
-        message: `Comments Retrieved ${post_id}`,
+        message: ` Post ID number ${post_id}'s Comments Retrieved `,
         body: {
           comments: await db.any(
             "SELECT comments.id, post_id, commenters_id, content, username FROM comments INNER JOIN users ON users.id = comments.commenters_id WHERE post_id = $1",
