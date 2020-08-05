@@ -3,7 +3,7 @@ import axios from "axios"
 import {AuthContext} from "../providers/AuthContext"
 import { apiURL } from "../utility/apiURL"
 import PostCard from "./PostCard"
-import CreateComment from "./CreateComment"
+
 const Home =()=>{
     const API = apiURL()
     const {currentUser, token} = useContext(AuthContext)
@@ -41,9 +41,9 @@ const Home =()=>{
            postContent={post.content}
            post_id = {post.id}
            />
-          
            </>
         )
+        debugger
     })
 
     

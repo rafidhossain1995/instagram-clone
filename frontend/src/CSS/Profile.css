@@ -1,4 +1,14 @@
+.profile-pic{
+    width: 240px;
+    margin-left: 10px;
+    display: flex;
+    margin-right: 3rem;
+   
+}
 
+.profile-img{
+     border-radius: 50%;
+}
 :root {
     font-size: 10px;
 }
@@ -61,7 +71,8 @@ img{
 
 
 
-.profile-user-name{
+
+-user-name{
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;

@@ -3,7 +3,6 @@ import axios from "axios"
 import {AuthContext} from "../providers/AuthContext"
 import { apiURL } from "../utility/apiURL"
 import PostCard from "./PostCard"
-import Comments from "./CreateComment"
 import "../CSS/DisplayImage.css"
 
 const DisplayImage =()=>{

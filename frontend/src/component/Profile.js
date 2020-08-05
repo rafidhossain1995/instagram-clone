@@ -39,7 +39,7 @@ import Comments from "./CreateComment"
                         'AuthToken': token
                     }
                 })
-                
+            // setPostImagePath(res.data.user.profile_pic)
             setUser(res.data.user);
         }
         fetchData();
@@ -77,20 +77,14 @@ import Comments from "./CreateComment"
             }
         }
         debugger
-        
-       
-
-       
         return(
 
   
 
             <div className="container">
-                <div className="profile">
-                    
-                    
-                <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt=""/>
-                </div>
+               <div className="profile-pic">
+               <img src={user.profile_pic} className="profile-img"/>
+               </div>
 
 				<h1 className="profile-user-name">{user.username}</h1>
                 <form onSubmit={handleNewPost} className="profile-user-settings">
@@ -113,6 +107,7 @@ import Comments from "./CreateComment"
 
             <div className="profile-bio">
 			<p><span className="profile-real-name">Welcome To</span> {user.username}'s finstagram account!</p>
+            
 			</div>
 
             <DisplayImage/>
